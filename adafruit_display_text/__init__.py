@@ -48,7 +48,7 @@ def wrap_text_to_pixels(
             s_sum = 0
             for c in string:
                 try:
-                    s_sum += font.get_glyph(ord(c))).shift_x
+                    s_sum += font.get_glyph(ord(c)).shift_x
                 except:
                     pass
             return s_sum
